@@ -16,11 +16,11 @@ public class TicketDbContext(DbContextOptions<TicketDbContext> options) : DbCont
     {
         if (Database.ProviderName == "Microsoft.EntityFrameworkCore.InMemory")
         {
-            // For in-memory database, use regular query with tracking enabled
+            // For in-memory database, use regular query with tracking disabled
             return Tickets.Where(t => t.Id == id).AsNoTracking().FirstOrDefaultAsync(token);
         }
         
-        // For PostgreSQL, use FOR UPDATE with tracking enabled
+        // For PostgreSQL, use FOR UPDATE with tracking disabled
         return Tickets.FromSqlRaw("SELECT * FROM tickets where id = {0} FOR UPDATE", id).AsNoTracking().FirstOrDefaultAsync(token);
     }
 
