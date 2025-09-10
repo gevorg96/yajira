@@ -26,9 +26,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="../src/YetAnotherJira.Application/YetAnotherJira.Application.csproj"/>
-        <ProjectReference Include="../src/YetAnotherJira.Domain/YetAnotherJira.Domain.csproj"/>
-        <ProjectReference Include="../src/YetAnotherJira.Infrastructure/YetAnotherJira.Infrastructure.csproj"/>
+        <ProjectReference Include="../../src/YetAnotherJira.Application/YetAnotherJira.Application.csproj"/>
+        <ProjectReference Include="../../src/YetAnotherJira.Domain/YetAnotherJira.Domain.csproj"/>
+        <ProjectReference Include="../../src/YetAnotherJira.Infrastructure/YetAnotherJira.Infrastructure.csproj"/>
     </ItemGroup>
 
 </Project>
