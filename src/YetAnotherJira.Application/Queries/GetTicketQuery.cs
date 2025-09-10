@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using YetAnotherJira.Application.DAL;
 using YetAnotherJira.Application.Mappers;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 using YetAnotherJira.Domain.Exceptions;
 
 namespace YetAnotherJira.Application.Queries;

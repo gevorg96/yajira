@@ -1,4 +1,5 @@
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 using YetAnotherJira.Models.V1.Responses;
 
 namespace YetAnotherJira.Controllers.Mappers;

@@ -1,5 +1,6 @@
 using YetAnotherJira.Application.DAL;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 
 namespace YetAnotherJira.Application.Mappers;
 

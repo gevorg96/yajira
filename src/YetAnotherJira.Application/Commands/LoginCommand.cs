@@ -6,6 +6,7 @@ using YetAnotherJira.Application.DAL;
 using YetAnotherJira.Application.Mappers;
 using YetAnotherJira.Application.Services;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 
 namespace YetAnotherJira.Application.Commands;
 

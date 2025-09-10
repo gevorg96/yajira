@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using YetAnotherJira.Application.Services;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 
 namespace YetAnotherJira.Infrastructure.Services;
 

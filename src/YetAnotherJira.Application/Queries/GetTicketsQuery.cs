@@ -5,6 +5,7 @@ using YetAnotherJira.Application.DAL;
 using YetAnotherJira.Application.Enums;
 using YetAnotherJira.Application.Mappers;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 using YetAnotherJira.Domain.Enums;
 
 namespace YetAnotherJira.Application.Queries;

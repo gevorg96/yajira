@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using YetAnotherJira.Application.Commands;
+using YetAnotherJira.Domain.Entities;
 
 namespace YetAnotherJira.Tests.Commands;
 
@@ -19,7 +20,7 @@ public class LoginCommandTests : TestBase
         result.User.Email.Should().Be("admin@yajira.com");
         result.Token.Should().Be("test-jwt-token");
         
-        MockJwtService.Verify(x => x.GenerateToken(It.IsAny<YetAnotherJira.Domain.User>()), Times.Once);
+        MockJwtService.Verify(x => x.GenerateToken(It.IsAny<User>()), Times.Once);
     }
 
     [Fact]

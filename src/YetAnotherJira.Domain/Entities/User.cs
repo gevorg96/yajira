@@ -1,4 +1,4 @@
-namespace YetAnotherJira.Domain;
+namespace YetAnotherJira.Domain.Entities;
 
 public class User
 {

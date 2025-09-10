@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using YetAnotherJira.Application.DAL;
 using YetAnotherJira.Application.Mappers;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 using YetAnotherJira.Domain.Enums;
 using YetAnotherJira.Domain.Exceptions;
 

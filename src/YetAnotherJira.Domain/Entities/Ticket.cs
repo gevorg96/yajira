@@ -1,6 +1,6 @@
 using YetAnotherJira.Domain.Enums;
 
-namespace YetAnotherJira.Domain;
+namespace YetAnotherJira.Domain.Entities;
 
 public class Ticket
 {

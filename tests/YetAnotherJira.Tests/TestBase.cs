@@ -5,6 +5,7 @@ using Moq;
 using YetAnotherJira.Application.DAL;
 using YetAnotherJira.Application.Services;
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 using YetAnotherJira.Domain.Enums;
 using YetAnotherJira.Infrastructure;
 using YetAnotherJira.Infrastructure.Data;

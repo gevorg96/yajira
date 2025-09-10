@@ -1,4 +1,5 @@
 using YetAnotherJira.Domain;
+using YetAnotherJira.Domain.Entities;
 
 namespace YetAnotherJira.Application.Services;
 
