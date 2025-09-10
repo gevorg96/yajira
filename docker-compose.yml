@@ -1,0 +1,52 @@
+services:
+  service:
+    image: yet_another_jira
+    build:
+      context: .
+      dockerfile: src/YetAnotherJira.Web/Dockerfile
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+      - "5000:8080"
+
+  yajira_postgres:
+    image: postgres
+    container_name: yajira_postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=postgres
+      - POSTGRES_HOST_AUTH_METHOD=md5
+      - POSTGRES_INITDB_ARGS=--auth=md5
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+      - ./initdb.d:/docker-entrypoint-initdb.d
+  
+  yajira_pgbouncer:
+    image: bitnami/pgbouncer:latest
+    container_name: yajira_pgbouncer
+    environment:
+      - POSTGRESQL_HOST=yajira_postgres
+      - POSTGRESQL_USERNAME=user
+      - POSTGRESQL_DATABASE=postgres
+      - POSTGRESQL_PASSWORD=mypassword
+      - PGBOUNCER_IDLE_TRANSACTION_TIMEOUT=60
+      - PGBOUNCER_POOL_MODE=transaction
+      - PGBOUNCER_MIN_POOL_SIZE=5
+      - PGBOUNCER_SERVER_RESET_QUERY_ALWAYS=0
+      - PGBOUNCER_SERVER_LIFETIME=3600
+      - PGBOUNCER_SERVER_IDLE_TIMEOUT=60
+      - PGBOUNCER_MAX_DB_CONNECTIONS=50
+      - PGBOUNCER_MAX_CLIENT_CONN=10000
+      - PGBOUNCER_RESERVE_POOL_SIZE=5
+      - PGBOUNCER_MIN_POOL_SIZE=2
+      - PGBOUNCER_DEFAULT_POOL_SIZE=16
+      - PGBOUNCER_IGNORE_STARTUP_PARAMETERS=extra_float_digits
+    ports:
+      - "15432:6432"
+
+volumes:
+  pgdata:
+
+

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherJira.Web", "src\YetAnotherJira.Web\YetAnotherJira.Web.csproj", "{BE3FA888-CACE-4854-8147-992C144C4236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherJira.Domain", "src\YetAnotherJira.Domain\YetAnotherJira.Domain.csproj", "{88B9EDF0-F101-4F61-ADC5-5C75E38BEE97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherJira.Application", "src\YetAnotherJira.Application\YetAnotherJira.Application.csproj", "{24763306-FF7A-4D58-B37B-76FBA95927AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherJira.Infrastructure", "src\YetAnotherJira.Infrastructure\YetAnotherJira.Infrastructure.csproj", "{7F01F0C3-A511-4B56-A192-1EBE91072EA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{A966B85B-7A6B-4522-AD69-8235FD98F73F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherJira.Tests", "YetAnotherJira.Tests\YetAnotherJira.Tests.csproj", "{B0D0D0D8-0EFC-43D6-93FA-492ADE50FCA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE3FA888-CACE-4854-8147-992C144C4236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3FA888-CACE-4854-8147-992C144C4236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3FA888-CACE-4854-8147-992C144C4236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3FA888-CACE-4854-8147-992C144C4236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B9EDF0-F101-4F61-ADC5-5C75E38BEE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B9EDF0-F101-4F61-ADC5-5C75E38BEE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B9EDF0-F101-4F61-ADC5-5C75E38BEE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B9EDF0-F101-4F61-ADC5-5C75E38BEE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24763306-FF7A-4D58-B37B-76FBA95927AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24763306-FF7A-4D58-B37B-76FBA95927AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24763306-FF7A-4D58-B37B-76FBA95927AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24763306-FF7A-4D58-B37B-76FBA95927AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F01F0C3-A511-4B56-A192-1EBE91072EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F01F0C3-A511-4B56-A192-1EBE91072EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F01F0C3-A511-4B56-A192-1EBE91072EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F01F0C3-A511-4B56-A192-1EBE91072EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D0D0D8-0EFC-43D6-93FA-492ADE50FCA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D0D0D8-0EFC-43D6-93FA-492ADE50FCA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D0D0D8-0EFC-43D6-93FA-492ADE50FCA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D0D0D8-0EFC-43D6-93FA-492ADE50FCA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
